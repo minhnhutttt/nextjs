@@ -1,4 +1,5 @@
-import '@/styles/globals.css'
+import 'normalize.css';
+import '@/styles/common.scss'
 import '@/styles/styles.scss'
 import Header from '@/components/header/header'
 
