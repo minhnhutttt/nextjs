@@ -63,7 +63,7 @@ export default function Home() {
         <meta property="og:url" content="https://zexaverse.co.jp/3dscan/" />
       </Head>
       <main className="">
-        {/* <ThreeJsScene /> */}
+        <ThreeJsScene />
         <div className="mv">
           <div className="mv__inner">
             <div className="mv__content">
