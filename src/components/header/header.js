@@ -7,6 +7,10 @@ export default function Header() {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
     return (
         <>
             <header id="header">
@@ -29,31 +33,31 @@ export default function Header() {
                         <div className="g-nav__main">
                             <ul className="g-nav__list">
                                 <li className="g-nav__list--item">
-                                    <Link href="/drone/">DRONE<span>-ドローン-</span></Link>
+                                    <Link href="/drone/" onClick={closeMenu}>DRONE<span>-ドローン-</span></Link>
                                 </li>
                                 <li className="g-nav__list--item">
-                                    <Link href="/metaverse/">METAVERSE<span>-メタバース-</span></Link>
+                                    <Link href="/metaverse/" onClick={closeMenu}>METAVERSE<span>-メタバース-</span></Link>
                                 </li>
                                 <li className="g-nav__list--item">
-                                    <Link href="/web3/">WEB 3.0<span>-ウェブスリー-</span></Link>
+                                    <Link href="/web3/" onClick={closeMenu}>WEB 3.0<span>-ウェブスリー-</span></Link>
                                 </li>
                                 <li className="g-nav__list--item">
-                                    <Link href="/3dscan/">3D SCAN<span>-3Dスキャン-</span></Link>
+                                    <Link href="/3dscan/" onClick={closeMenu}>3D SCAN<span>-3Dスキャン-</span></Link>
                                 </li>
                                 <li className="g-nav__list--item">
-                                    <Link href="https://zexa.com/" target="_blank" rel="noopener noreferrer">
+                                    <Link href="https://zexa.com/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
                                         <div className="external-link">ALL PROJECT</div>
                                         <span>-プロジェクト一覧-</span>
                                     </Link>
                                 </li>
                                 <li className="g-nav__list--item">
-                                    <Link href="/movie/">PR VIDEO<span>-広報動画-</span></Link>
+                                    <Link href="/movie/" onClick={closeMenu}>PR VIDEO<span>-広報動画-</span></Link>
                                 </li>
                                 <li className="g-nav__list--item">
-                                    <Link href="/download/">DOWNLOAD<span>-PC版ダウンロード-</span></Link>
+                                    <Link href="/download/" onClick={closeMenu}>DOWNLOAD<span>-PC版ダウンロード-</span></Link>
                                 </li>
                                 <li className="g-nav__list--item">
-                                    <Link href="mailto:info@zexaverse.co.jp">CONTACT<span>-お問い合わせ-</span></Link>
+                                    <Link href="mailto:info@zexaverse.co.jp" onClick={closeMenu}>CONTACT<span>-お問い合わせ-</span></Link>
                                 </li>
                             </ul>
                             <div className="g-nav__company">
@@ -68,21 +72,21 @@ export default function Header() {
                                     </p>
                                 </div>
                                 <div className="g-nav__company--leagal">
-                                    <Link href="/company/">会社情報</Link>
+                                    <Link href="/company/" onClick={closeMenu}>会社情報</Link>
                                     <br />
-                                    <Link href="/policy/">プライバシーポリシー</Link>
+                                    <Link href="/policy/" onClick={closeMenu}>プライバシーポリシー</Link>
                                 </div>
                             </div>
                             <div className="g-nav__sns">
                                 <p className="g-nav__sns--ttl">Official SNS</p>
                                 <div className="g-nav__sns--list">
-                                    <Link href="https://www.instagram.com/zexaverse/">
+                                    <Link href="https://www.instagram.com/zexaverse/" onClick={closeMenu}>
                                         <img src="/images/ic-insta-bl.svg" alt="instagram" />
                                     </Link>
-                                    <Link href="https://twitter.com/zexaverse">
+                                    <Link href="https://twitter.com/zexaverse" onClick={closeMenu}>
                                         <img src="/images/ic-twitter-bl.svg" alt="twitter" />
                                     </Link>
-                                    <Link href="https://www.youtube.com/channel/UC57pmp0OQf7egnTeecFRLTg">
+                                    <Link href="https://www.youtube.com/channel/UC57pmp0OQf7egnTeecFRLTg" onClick={closeMenu}>
                                         <img src="/images/ic-yt-bl.svg" alt="youtube" />
                                     </Link>
                                 </div>
